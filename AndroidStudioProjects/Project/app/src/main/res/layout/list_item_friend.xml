@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF77"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ivPhoto"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_toEndOf="@+id/ivPhoto"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvDOB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DOB"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_below="@id/tvName"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_below="@+id/tvDOB"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Birthday Wishes</string>
+    <string name="title_activity_add_friend">AddFriendActivity</string>
+</resources>
